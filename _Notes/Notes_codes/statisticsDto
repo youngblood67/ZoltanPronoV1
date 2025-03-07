@@ -1,0 +1,116 @@
+namespace DomainLayer.Entities.DTO.Statistics
+{
+    public class StatisticsDto
+    {
+        public TeamDto Team { get; set; }
+        public LeagueDto League { get; set; }
+        public GamesDto Games { get; set; }
+        public SubstitutesDto Substitutes { get; set; }
+        public ShotsDto Shots { get; set; }
+        public GoalsDto Goals { get; set; }
+        public PassesDto Passes { get; set; }
+        public TacklesDto Tackles { get; set; }
+        public DuelsDto Duels { get; set; }
+        public DribblesDto Dribbles { get; set; }
+        public FoulsDto Fouls { get; set; }
+        public CardsDto Cards { get; set; }
+        public PenaltyDto Penalty { get; set; }
+    }
+
+    public class TeamDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Logo { get; set; }
+    }
+
+    public class LeagueDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+        public string Logo { get; set; }
+        public string Flag { get; set; }
+        public int Season { get; set; }
+    }
+
+    public class GamesDto
+    {
+        public int Appearances { get; set; }
+        public int Lineups { get; set; }
+        public int Minutes { get; set; }
+        public int? Number { get; set; }
+        public string Position { get; set; }
+        public string Rating { get; set; }
+        public bool Captain { get; set; }
+    }
+
+    public class SubstitutesDto
+    {
+        public int In { get; set; }
+        public int Out { get; set; }
+        public int Bench { get; set; }
+    }
+
+    public class ShotsDto
+    {
+        public int? Total { get; set; }
+        public int? On { get; set; }
+    }
+
+    public class GoalsDto
+    {
+        public int Total { get; set; }
+        public int Conceded { get; set; }
+        public int? Assists { get; set; }
+        public int? Saves { get; set; }
+    }
+
+    public class PassesDto
+    {
+        public int Total { get; set; }
+        public int? Key { get; set; }
+        public int Accuracy { get; set; }
+    }
+
+    public class TacklesDto
+    {
+        public int Total { get; set; }
+        public int? Blocks { get; set; }
+        public int? Interceptions { get; set; }
+    }
+
+    public class DuelsDto
+    {
+        public int Total { get; set; }
+        public int Won { get; set; }
+    }
+
+    public class DribblesDto
+    {
+        public int Attempts { get; set; }
+        public int? Success { get; set; }
+        public int? Past { get; set; }
+    }
+
+    public class FoulsDto
+    {
+        public int? Drawn { get; set; }
+        public int? Committed { get; set; }
+    }
+
+    public class CardsDto
+    {
+        public int Yellow { get; set; }
+        public int YellowRed { get; set; }
+        public int Red { get; set; }
+    }
+
+    public class PenaltyDto
+    {
+        public DateTime Time { get; set; }
+        public PlayerDto Player { get; set; }
+        public TeamDto Team { get; set; }
+        public bool WasSuccessful { get; set; }
+    }
+}

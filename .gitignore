@@ -1,0 +1,53 @@
+# 🔹 Dossiers de compilation et temporaires
+bin/
+obj/
+.vs
+TestResults/
+GeneratedFiles/
+.nuget/
+out/
+logs/
+temp/
+Testit.cs
+
+# 🔹 Fichiers de configuration locaux et secrets
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+.env
+
+# 🔹 Fichiers spécifiques à Rider, VS Code, et JetBrains
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+*.bak
+
+# 🔹 Packages et dépendances
+node_modules/
+packages/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# 🔹 Fichiers de build et publish
+publish/
+*.exe
+*.dll
+*.pdb
+*.db
+*.log
+*.csproj.user
+*.rsuser
+*.msi
+*.ps1
+
+# 🔹 Fichiers système Windows/Mac
+Thumbs.db
+ehthumbs.db
+.DS_Store
+._*
+/Zoltan/PresentationLayer/Properties/launchSettings.json
